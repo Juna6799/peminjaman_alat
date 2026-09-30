@@ -122,21 +122,21 @@
         <!-- Right 1 Col: Quick Actions & Audit Trail -->
         <div class="space-y-6">
             <!-- Quick Actions -->
-            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-5 rounded-2xl shadow-md">
+            <div class="bg-white text-slate-800 p-5 rounded-lg border border-slate-200">
                 <h4 class="font-bold text-sm mb-1">Aksi Cepat Sistem</h4>
-                <p class="text-xs text-slate-400 mb-4">Pintasan operasional pengurus sarpras</p>
+                <p class="text-xs text-slate-500 mb-4">Pintasan operasional pengurus sarpras</p>
                 <div class="grid grid-cols-2 gap-2">
-                    <a href="{{ route('peminjaman.create') }}" class="p-3 bg-white/10 hover:bg-white/20 rounded-xl text-center text-xs font-semibold transition-all">
-                        <i class="fa-solid fa-plus-circle block text-lg mb-1 text-emerald-400"></i> Pinjam Alat
+                    <a href="{{ route('peminjaman.create') }}" class="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-md text-center text-xs font-semibold transition-colors">
+                        <i class="fa-solid fa-plus-circle block text-lg mb-1 text-brand-600"></i> Pinjam Alat
                     </a>
-                    <a href="{{ route('alat.create') }}" class="p-3 bg-white/10 hover:bg-white/20 rounded-xl text-center text-xs font-semibold transition-all">
-                        <i class="fa-solid fa-toolbox block text-lg mb-1 text-blue-400"></i> Tambah Alat
+                    <a href="{{ route('alat.create') }}" class="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-md text-center text-xs font-semibold transition-colors">
+                        <i class="fa-solid fa-toolbox block text-lg mb-1 text-blue-600"></i> Tambah Alat
                     </a>
-                    <a href="{{ route('laporan.index') }}" class="p-3 bg-white/10 hover:bg-white/20 rounded-xl text-center text-xs font-semibold transition-all">
-                        <i class="fa-solid fa-file-pdf block text-lg mb-1 text-amber-400"></i> Rekap Laporan
+                    <a href="{{ route('laporan.index') }}" class="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-md text-center text-xs font-semibold transition-colors">
+                        <i class="fa-solid fa-file-pdf block text-lg mb-1 text-amber-600"></i> Rekap Laporan
                     </a>
-                    <a href="{{ route('kategori.index') }}" class="p-3 bg-white/10 hover:bg-white/20 rounded-xl text-center text-xs font-semibold transition-all">
-                        <i class="fa-solid fa-tags block text-lg mb-1 text-purple-400"></i> Kategori
+                    <a href="{{ route('kategori.index') }}" class="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-md text-center text-xs font-semibold transition-colors">
+                        <i class="fa-solid fa-tags block text-lg mb-1 text-slate-600"></i> Kategori
                     </a>
                 </div>
             </div>

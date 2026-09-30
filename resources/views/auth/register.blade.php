@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="min-h-[80vh] flex flex-col justify-center items-center py-6">
-    <div class="w-full max-w-lg bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
+    <div class="w-full max-w-lg bg-white rounded-lg border border-slate-200 overflow-hidden">
         
         <!-- Header Banner -->
-        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-6 text-center text-white">
-            <h2 class="text-xl font-bold tracking-tight">Registrasi Akun Siswa / Peminjam</h2>
-            <p class="text-xs text-slate-300 mt-1">Daftarkan identitas Anda untuk dapat meminjam sarana sekolah</p>
+        <div class="bg-slate-100 p-6 text-center text-slate-800 border-b border-slate-200">
+            <h2 class="text-xl font-bold">Registrasi Akun Siswa / Peminjam</h2>
+            <p class="text-xs text-slate-600 mt-1">Daftarkan identitas Anda untuk dapat meminjam sarana sekolah</p>
         </div>
 
         <!-- Form Box -->
@@ -23,7 +23,7 @@
                     </label>
                     <input type="text" id="name" name="name" value="{{ old('name') }}" required
                         placeholder="Contoh: Budi Pratama (XII RPL 1)"
-                        class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                        class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -33,7 +33,7 @@
                         </label>
                         <input type="text" id="username" name="username" value="{{ old('username') }}" required
                             placeholder="Contoh: siswa123"
-                            class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                            class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">
                     </div>
 
                     <div>
@@ -42,7 +42,7 @@
                         </label>
                         <input type="text" id="no_telp" name="no_telp" value="{{ old('no_telp') }}"
                             placeholder="08123456789"
-                            class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                            class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@
                         </label>
                         <input type="password" id="password" name="password" required
                             placeholder="Minimal 6 karakter"
-                            class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                            class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">
                     </div>
 
                     <div>
@@ -62,7 +62,7 @@
                         </label>
                         <input type="password" id="password_confirmation" name="password_confirmation" required
                             placeholder="Ulangi password"
-                            class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                            class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">
                     </div>
                 </div>
 
@@ -72,10 +72,10 @@
                     </label>
                     <textarea id="alamat" name="alamat" rows="2"
                         placeholder="Contoh: Kelas XII RPL 1 / Jl. Merak No. 10"
-                        class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">{{ old('alamat') }}</textarea>
+                        class="w-full px-4 py-2 bg-white border border-slate-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-colors">{{ old('alamat') }}</textarea>
                 </div>
 
-                <button type="submit" class="w-full py-3 px-4 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-brand-600/30 transition-all flex items-center justify-center space-x-2">
+                <button type="submit" class="w-full py-3 px-4 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm rounded-md transition-colors flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-user-plus"></i>
                     <span>Buat Akun Sekarang</span>
                 </button>

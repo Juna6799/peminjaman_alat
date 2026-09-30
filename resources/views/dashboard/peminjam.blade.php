@@ -8,21 +8,21 @@
 <div class="space-y-6">
 
     <!-- WELCOME HERO BANNER -->
-    <div class="bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 text-white rounded-3xl p-8 shadow-lg relative overflow-hidden">
+    <div class="bg-white text-slate-800 rounded-lg p-6 border border-slate-200">
         <div class="relative z-10 max-w-2xl">
-            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold tracking-wide">
+            <span class="px-2 py-1 bg-brand-50 text-brand-700 border border-brand-100 rounded-md text-xs font-semibold">
                 <i class="fa-solid fa-graduation-cap mr-1"></i> Area Peminjam
             </span>
-            <h2 class="text-2xl sm:text-3xl font-black mt-3">Halo, {{ Auth::user()->name }}!</h2>
-            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+            <h2 class="text-xl sm:text-2xl font-bold mt-3">Halo, {{ Auth::user()->name }}!</h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
                 Butuh sarana proyektor, alat praktikum laboratorium, atau perlengkapan olahraga sekolah? Ajukan peminjaman secara online dengan cepat dan transparan.
             </p>
             <div class="mt-6 flex flex-wrap gap-3">
-                <a href="{{ route('peminjaman.create') }}" class="px-5 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-brand-600/30 transition-all flex items-center space-x-2">
+                <a href="{{ route('peminjaman.create') }}" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-md transition-colors flex items-center space-x-2">
                     <i class="fa-solid fa-plus-circle"></i>
                     <span>Ajukan Pinjam Sekarang</span>
                 </a>
-                <a href="{{ route('alat.index') }}" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white font-bold text-xs rounded-xl transition-all flex items-center space-x-2">
+                <a href="{{ route('alat.index') }}" class="px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-xs rounded-md border border-slate-300 transition-colors flex items-center space-x-2">
                     <i class="fa-solid fa-boxes-stacked"></i>
                     <span>Eksplor Katalog Alat</span>
                 </a>

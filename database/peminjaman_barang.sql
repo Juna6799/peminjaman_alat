@@ -255,10 +255,8 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_email_unique` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data untuk tabel `users`
 INSERT INTO `users` VALUES
-('1', 'Administrator Sarpras', 'admin', 'admin@sekolah.sch.id', NULL, '$2y$12$nVTJTgNRQGjK6QSLQaiCXOcGqP0RU9PBAYAI3FJFu.mwpqdnL0aFC', 'admin', '081234567890', 'Ruang Sarpras Lantai 1', NULL, '2026-08-16 17:30:45', '2026-08-16 17:30:45'),
-('2', 'Budi Santoso (Petugas Lab)', 'petugas', 'petugas@sekolah.sch.id', NULL, '$2y$12$26gp8vWNMW20.Co0dRZvFO/AQwnGwvNQvT7qe9p6GSSIDSMESDm26', 'petugas', '081234567891', 'Ruang Pengelola Alat', NULL, '2026-08-16 17:30:46', '2026-08-16 17:30:46'),
+('1', 'Administrator Sarpras', 'admin', 'adminsekolah@gmail.com', NULL, '$2y$12$nVTJTgNRQGjK6QSLQaiCXOcGqP0RU9PBAYAI3FJFu.mwpqdnL0aFC', 'admin', '081234567890', 'Ruang Sarpras Lantai 1', NULL, '2026-08-16 17:30:45', '2026-08-16 17:30:45'),
 ('3', 'Ahmad Fauzi (XII RPL 1)', 'siswa1', 'ahmad@siswa.sch.id', NULL, '$2y$12$wNGOkulfsm9yq69djUFhGuoC5bLOBOka4iHD/vI7LYLbTypHXmQH2', 'peminjam', '081298765432', 'Jl. Merdeka No. 12', NULL, '2026-08-16 17:30:46', '2026-08-16 17:30:46'),
 ('4', 'Siti Nurhaliza (XII RPL 2)', 'siswa2', 'siti@siswa.sch.id', NULL, '$2y$12$iGosndBb557ORVT8AIDmvuFlMCjKJe5YHdZtLtaKr3MGk/nHfcHPO', 'peminjam', '081287654321', 'Jl. Pemuda No. 45', NULL, '2026-08-16 17:30:46', '2026-08-16 17:30:46');
 
